@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <!-- Link para licar o html com o css -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+
+        <!--NAV junção dos elementos de navegação -->
+        <nav>
+            <!-- UL = listagem de itens -->
+            <ul>
+                <!-- cada item da UL tem que ter uma LI -->
+                <li>
+                    <!-- Como cada LI vai direcionar para uma pag diferente, tem que ter um link e para isso sempre precisa do A -->
+                    <a href="index.html">Sobre mim</a>
+                </li>
+    
+                <li>
+                    <a href="projeto.html">Projetos</a>
+                </li>
+    
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+    
+            </ul>
+        </nav>
+
+        <!-- Header fica depois do NAV, como se fosse um cabeçalho, constando geralmente logo,
+        formulario, titulos, entre outros -->
+        <header class="center">
+            <!-- DIV = serve só para organizar a estrutura -->
+            <!-- Class = sempre que usar esta class vai usar a formação que esta nela -->
+            <div>
+                <img src="./img/danielly.jpeg">
+            </div>
+            <!-- Titulo e subtitulo que vai ficar embaixo da img -->
+            <h1> Danielly Souza</h1>
+            <h2> Desenvolvedora de Softwares</h2>             
+            <h3>Contatos:</h3>            
+        </header>
+
+        <!-- main como se fosse o corpo do site -->
+        <main class="contact">          
+            <!-- Target = indica que quando clicar vai para outra aba -->
+            <!-- Rel = ajuda quanto o google achar o site como em questão de segurança -->
+            <a href="https://www.instagram.com/dany.souza.manoel/" target="_blank" rel="noopener noreferrer">
+            <img src="./img/insta.png"></img>
+            <p>Instagram</p>
+            <a href="https://wa.me/5547996462848/" target="_blank" rel="noopener noreferrer">
+                <img src="./img/whatsapp.svg"></img>
+                <p>Whatsapp</p>
+       </main>
+
+        <!-- para customizar somente este formulario vai ser criado uma class para diferencia-lo -->
+        <form class="contact-form" action="https://formsubmit.co/2de16524b6849488bc8eb0ea1963d921" method="POST">
+            <p> Para entrar em contato voce pode tambem enviar um e-mail para daniellysmanoel@gmail.com ou pelos nos campos abaixo</p>
+            <!-- label tem o objetivo de identificar a função do input e para ligar os dois é utilizadp
+            o for no label e o id no input com o mesmo nome -->
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" required>
+            <label for="message">Mensagem</label>
+            <input type="text" name="message" id="message" required>
+            <!-- input hidden para pagina de agradecimento abrir depois que enviar o email -->
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
+            <button type="submit">Enviar</button>
+       </form> 
+
+    </div>    
+</body>
+</html>

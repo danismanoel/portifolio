@@ -1,0 +1,141 @@
+body {
+    /* cor da letra e do fundo */
+    color: white;
+    background-color: black;
+    /* mudar a fonte */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* esta parte vai jogar tudo que esta dentro da ul um do lado do outro */
+ul {
+    display: flex;
+    justify-content: space-between;
+    /* tira a bolinha que esta antes do nome */
+    list-style-type: none;
+    /* alinha verticalmente ao centro */
+    align-items: center;
+    /* distancia superior */
+    padding: 16px;
+}
+
+/* como foi colocado um link a escrita muda, abaixo esta alterando a cor e tirando o sublinhado */
+a {
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    text-align: center;
+}
+
+/* alterar o tamanho,deixar redonda e colocar borda a imagem */
+/* se coloca header antes, as conf só vai ser para as img que estão no campo header */
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid blue;
+}
+
+header p {
+    padding: 26px;
+}
+
+/* Criando a class center usada no html */
+.center {
+    text-align: center;
+}
+
+h1 {
+    color: blue;
+}
+
+footer img {
+    width: 40px;
+    height: 40px;
+}
+
+/* 
+utilizar o comando abaixo para deixar uma img do lado da outra, caso tiver mais que uma e centralizar
+*/
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+/* para um espaçamento maior entre as img */
+footer a {
+    /* margin: 20px; */
+    text-align: center;
+}
+
+
+/* mergem entre a escrita e a img */
+footer p {
+    margin-top: 2px;
+}
+
+.container {
+    /* o 0px significa que encima e embaixo de distancia de 0 e nas laterais de 50px */
+    padding: 0px 50px;
+}
+
+/* para alterar a cor da escrita dos elementos de navegação superior quando passar o mouse */
+nav a:hover{
+    color: blue;
+}
+
+.contact-form input {
+    width: 100%;
+    /* cima e baixo 8px e direira e esquerda 0px */
+    padding: 8px opx;
+    margin: 8px 0px;
+}
+
+input[type=text] {
+    height: 100px;
+}
+
+button{
+    background-color: white;
+    border: none;
+    width: 100px;
+    height: 30px;
+}
+
+/* 
+utilizar o comando abaixo para deixar uma img do lado da outra, caso tiver mais que uma e centralizar
+*/
+.contact {
+    display: flex;
+    justify-content: center;
+}
+
+/* para um espaçamento maior entre as img */
+.contact a {
+    margin: 20px;
+    text-align: center;
+}
+
+
+/* margem entre a escrita e a img */
+.contact p {
+    margin-top: 2px;
+}
+
+.contact img {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
